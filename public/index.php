@@ -21,6 +21,8 @@ $app['sql'] = new Blog\Sql(
     $config['password']
 );
 
+echo "ok";
+
 //Register twig
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views',
